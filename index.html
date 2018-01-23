@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal - Lukas Inschlag</title>
+    <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="texts.css">
+</head>
+
+<body class="mdc-typography">
+
+<div class="container">
+    <div class="mdc-card mdc-card-w mdc-elevation--z6">
+        <div class="mdc-card__horizontal-block">
+
+            <div class="logo-c">
+                <section class="mdc-card__media-item logo"></section>
+            </div>
+
+            <section class="mdc-card__primary card-hb1">
+
+                <section id="dynamic-demo-toolbar">
+                    <nav id="dynamic-tab-bar" class="mdc-tab-bar" role="tablist">
+                        <a role="tab" aria-controls="panel-1"
+                           class="mdc-tab mdc-tab--active" href="#panel-1">ABOUT <b>ME</b></a>
+                        <a role="tab" aria-controls="panel-2"
+                           class="mdc-tab" href="#panel-2">CURRICULUM VITAE</a>
+                        <a role="tab" aria-controls="panel-3"
+                           class="mdc-tab" href="#panel-3">PROJECTS</a>
+                        <span class="mdc-tab-bar__indicator"></span>
+                    </nav>
+                </section>
+
+                <section>
+                    <div class="panels">
+                        <p class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">ABOUT <b>ME</b></p>
+                        <p class="panel" id="panel-2" role="tabpanel" aria-hidden="true">CURRICULUM VITAE</p>
+                        <p class="panel" id="panel-3" role="tabpanel" aria-hidden="true">PROJECTS</p>
+                    </div>
+                    <div class="dots">
+                        <a class="dot active" data-trigger="panel-1" href="#panel-1"></a>
+                        <a class="dot" data-trigger="panel-2" href="#panel-2"></a>
+                        <a class="dot" data-trigger="panel-3" href="#panel-3"></a>
+                    </div>
+                </section>
+
+                <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
+                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+            </section>
+
+            <section class="mdc-card__actions card-hb2">
+
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="mdc-dialog__footer mdc-elevation--z4">
+    <div class="mdc-theme--text-primary-on-dark text-footer--med">
+        &copy; 2018 LUKAS INSCHLAG ALL RIGHTS RESERVED
+    </div>
+</div>
+
+<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+<script src="script.js"></script>
+<script>mdc.autoInit()</script>
+</body>
+</html>
