@@ -10,8 +10,9 @@ body {
     display: block;
     background-repeat: no-repeat;
     background-size: auto;
-    background: -webkit-linear-gradient(-45deg, rgba(66, 66, 66, 1) 0%,rgba(48, 48, 48, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(66, 66, 66, 1) 0%,rgba(48, 48, 48, 1) 100%);
+    /*background: -webkit-linear-gradient(-45deg, rgba(66, 66, 66, 1) 0%,rgba(48, 48, 48, 1) 100%);
+    background: linear-gradient(135deg, rgba(66, 66, 66, 1) 0%,rgba(48, 48, 48, 1) 100%); */
+    background: linear-gradient(135deg, rgba(255,255,255, 1) 0%,rgba(242, 242, 242, 1) 100%);
     overflow: auto;
 }
 
