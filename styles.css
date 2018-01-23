@@ -18,7 +18,9 @@ body {
 .logo-c {
     height: 100%;
     background-color: rgba(13, 71, 161, 0.95);
-    padding: 20px;
+    padding-top: 1%;
+    padding-left: 15px;
+    position: relative;
 }
 
 .logo {
@@ -26,6 +28,28 @@ body {
     background-size: contain;
     height: 64px;
     width: 64px;
+}
+
+#language {
+    height: 5%;
+    padding-left: 15px;
+    min-width: 72px;
+    position: relative;
+    top: 80%;
+    bottom: 0;
+}
+
+#language button {
+    display: inline-block;
+    color: var(--mdc-theme-text-primary-on-dark, white) !important;
+    opacity: 0.6;
+    padding: 2px;
+    min-width: 32px;
+    height: 36px;
+}
+
+#language button.active {
+    opacity: 1;
 }
 
 .mdc-card__horizontal-block {
@@ -52,8 +76,25 @@ body {
     background-color: rgba(21, 101, 192, 0.85);
 }
 
+.box-horizontal-inner {
+    max-width: 45%;
+}
+
 #dynamic-tab-bar {
     margin: 0;
+}
+
+.mdc-tab-bar a {
+    color: var(--mdc-theme-text-primary-on-dark, white) !important;
+    opacity: 0.6;
+}
+
+.mdc-tab-bar .mdc-tab--active {
+    opacity: 1;
+}
+
+.mdc-tab-bar__indicator {
+    background-color: transparent;
 }
 
 .mdc-tab.mdc-ripple-upgraded::before, .mdc-tab.mdc-ripple-upgraded::after {
@@ -78,6 +119,12 @@ body {
     display: block;
 }
 
+.mdc-card__horizontal-block.active {
+    visibility: visible;
+    display: flex;
+    padding: 24px;
+}
+
 .mdc-dialog__footer {
     background-color: #424242;
     display: flex;
@@ -87,6 +134,13 @@ body {
     right: 0;
     justify-content: flex-end;
     padding: 8px;
+}
+
+.separator--large {
+    height: 4px;
+    width: 120px;
+    background-color: #FFCA28;
+    margin-bottom: 48px;
 }
 
 .filter-c1 {

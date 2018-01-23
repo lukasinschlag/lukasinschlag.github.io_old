@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personal - Lukas Inschlag</title>
+    <title>Lukas Inschlag</title>
+
+    <!--
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    -->
+
+    <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="texts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body class="mdc-typography">
@@ -15,6 +21,11 @@
 
             <div class="logo-c">
                 <section class="mdc-card__media-item logo"></section>
+
+                <section id="language">
+                    <button class="mdc-button mdc-button--compact active">EN</button>
+                    <button class="mdc-button mdc-button--compact">DE</button>
+                </section>
             </div>
 
             <section class="mdc-card__primary card-hb1">
@@ -22,20 +33,42 @@
                 <section id="dynamic-demo-toolbar">
                     <nav id="dynamic-tab-bar" class="mdc-tab-bar" role="tablist">
                         <a role="tab" aria-controls="panel-1"
-                           class="mdc-tab mdc-tab--active" href="#panel-1">ABOUT <b>ME</b></a>
+                           class="mdc-tab mdc-tab--active" href="#panel-1"><span id="menu1"></span></a>
                         <a role="tab" aria-controls="panel-2"
-                           class="mdc-tab" href="#panel-2">CURRICULUM VITAE</a>
+                           class="mdc-tab" href="#panel-2"><span id="menu2"></span></a>
                         <a role="tab" aria-controls="panel-3"
-                           class="mdc-tab" href="#panel-3">PROJECTS</a>
+                           class="mdc-tab" href="#panel-3"><span id="menu3"></span></a>
                         <span class="mdc-tab-bar__indicator"></span>
                     </nav>
                 </section>
 
                 <section>
                     <div class="panels">
-                        <p class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">ABOUT <b>ME</b></p>
-                        <p class="panel" id="panel-2" role="tabpanel" aria-hidden="true">CURRICULUM VITAE</p>
-                        <p class="panel" id="panel-3" role="tabpanel" aria-hidden="true">PROJECTS</p>
+                        <div class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">
+                            <h1 class="mdc-card__title mdc-card__title--xlarge white" id="p1_title"></h1>
+                            <div class="separator--large"></div>
+                            <h2 class="mdc-card__title mdc-card__title--med white" id="p1_text"></h2>
+                        </div>
+                        <div class="panel mdc-card__horizontal-block" id="panel-2" role="tabpanel" aria-hidden="true">
+                            <div class="box-horizontal-inner">
+                                <h2 class="mdc-card__title mdc-card__title--med white" id="ex_title"></h2>
+                                <p class="mdc-list-item__text" id="ex_line1"></p>
+                                <p class="mdc-list-item__text" id="ex_line2"></p>
+                                <p class="mdc-list-item__text" id="ex_line3"></p>
+                                <p class="mdc-list-item__text" id="ex_line4"></p>
+                                <p class="mdc-list-item__text" id="ex_line5"></p>
+                            </div>
+                            <div class="box-horizontal-inner">
+                                <h2 class="mdc-card__title mdc-card__title--med white" id="ed_title"></h2>
+                                <p class="mdc-list-item__text" id="ed_line1"></p>
+                                <p class="mdc-list-item__text" id="ed_line2"></p>
+                                <p class="mdc-list-item__text" id="ed_line3"></p>
+                                <p class="mdc-list-item__text" id="ed_line4"></p>
+                            </div>
+                        </div>
+                        <div class="panel" id="panel-3" role="tabpanel" aria-hidden="true">
+
+                        </div>
                     </div>
                     <div class="dots">
                         <a class="dot active" data-trigger="panel-1" href="#panel-1"></a>
@@ -44,8 +77,6 @@
                     </div>
                 </section>
 
-                <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-                <h2 class="mdc-card__subtitle">Subtitle here</h2>
             </section>
 
             <section class="mdc-card__actions card-hb2">
@@ -61,6 +92,9 @@
     </div>
 </div>
 
+<script src="https://cdn.rawgit.com/kevindb/jquery-load-json/v1.3.3/dist/jquery.loadJSON.min.js"
+        integrity="sha384-fG4z44FEBJnIevyzvSDobSmVTsO/oVsxNvKcUl7bO1ihWYDPg2QI83Xi+7wSBzap"
+        crossorigin="anonymous"></script>
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script src="script.js"></script>
 <script>window.mdc.autoInit();</script>

@@ -55,4 +55,10 @@ dots.addEventListener('click', function (evt) {
 
     updatePanel(dotIndex);
     updateDot(dotIndex);
-})
+});
+
+// Data binding
+$.getJSON("res/data_en.json", function(json) {
+    $('body').loadJSON(json);
+    console.log(json);
+});

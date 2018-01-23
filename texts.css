@@ -8,3 +8,21 @@
     letter-spacing: 0.04em;
     text-decoration: inherit;
     text-transform: inherit; }
+
+.white {
+    color: var(--mdc-theme-text-primary-on-dark, white) !important;
+}
+
+.mdc-card__title--xlarge {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+
+.mdc-card__title--med {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.8;
+}
