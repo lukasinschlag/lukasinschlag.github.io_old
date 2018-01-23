@@ -34,7 +34,7 @@ dynamicTabBar.listen('MDCTabBar:change', function ({detail: tabs}) {
     updatePanel(nthChildIndex);
     updateDot(nthChildIndex);
 
-    var activeTab = dynamicTabBar.querySelector('.mdc-tab.mdc-ripple-upgraded--background-focused');
+    var activeTab = document.querySelector('.mdc-tab.mdc-ripple-upgraded--background-focused');
     if(activeTab){
         activeTab.classList.remove('.mdc-ripple-upgraded--background-focused')
     }
