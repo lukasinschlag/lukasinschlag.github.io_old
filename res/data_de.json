@@ -1,0 +1,19 @@
+{
+  "menu1": "ÜBER <b>MICH</b>",
+  "menu2": "CURRICULUM VITAE",
+  "menu3": "PROJECTS",
+  "p1_title": "HELLO THERE",
+  "p1_text": "My name is Lukas Inschlag, currently living in lower Austria.<br> I studied business infromatics at the University of Technology in Vienna and currently work as Business IT Manager. Aside from that I occasionally develop apps for the Android plattform.",
+
+  "ex_title": "EXPERIENCE",
+  "ex_line1": "<b>06/2012</b> Social project: Caritas Vienna (Haus Amadou)",
+  "ex_line2": "<b>07-08/2014</b> IT internship at Hirtenberger AG",
+  "ex_line3": "<b>07-08/2015</b> Android app: Simple Schedule",
+  "ex_line4": "<b>01/2016-07/2017</b> IT Support at Hirtenberger AG (1d per week)",
+  "ex_line5": "<b>08/2017-Today</b> Business IT Manager at Hirtenberger AG (4d per week)",
+  "ed_title": "EDUCATION",
+  "ed_line1": "<b>2005-2009</b> Junior high school: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, Lower Austria",
+  "ed_line2": "<b>2009-2013</b> Senior high school: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, Lower Austria",
+  "ed_line3": "<b>2013-2017</b> Bachelor program Business Informatics, University of Technology, Vienna",
+  "ed_line4": "<b>2017-Today</b> Master program Business Informatics, University of Technology, Vienna"
+}

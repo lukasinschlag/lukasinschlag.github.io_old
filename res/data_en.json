@@ -1,7 +1,11 @@
 {
   "menu1": "ABOUT <b>ME</b>",
+  "menu0m": "ABOUT <b>ME</b>",
+  "menu1m": "ABOUT <b>ME</b>",
   "menu2": "CURRICULUM VITAE",
+  "menu2m": "CURRICULUM VITAE",
   "menu3": "PROJECTS",
+  "menu3m": "PROJECTS",
   "p1_title": "HELLO THERE",
   "p1_text": "My name is Lukas Inschlag, currently living in lower Austria.<br> I studied business infromatics at the University of Technology in Vienna and currently work as Business IT Manager. Aside from that I occasionally develop apps for the Android plattform.",
 
@@ -15,5 +19,11 @@
   "ed_line1": "<b>2005-2009</b> Junior high school: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, Lower Austria",
   "ed_line2": "<b>2009-2013</b> Senior high school: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, Lower Austria",
   "ed_line3": "<b>2013-2017</b> Bachelor program Business Informatics, University of Technology, Vienna",
-  "ed_line4": "<b>2017-Today</b> Master program Business Informatics, University of Technology, Vienna"
+  "ed_line4": "<b>2017-Today</b> Master program Business Informatics, University of Technology, Vienna",
+  "pr1_title": "SIMPLE SCHEDULE",
+  "pr1_text": "Simple Schedule started out as a project to learn myself JAVA at the beginning of university. Aside from that, I felt that there was quite no app that could properly help organizing my timeschedule for university. So those two have been the reasons why I started this. <br><br> By then including a community to test it, it quickly grow, the feature request became countless, making this, at the beginning very simple project, quite complex already. <br>Due to increasing workload at my studies I sadly had to stop actively developing this app, but I definitely learned quite alot during this time.",
+  "pr1_btn": "ABOUT SIMPLE SCHEDULE",
+  "pr2_title": "MOBILE SALES APP",
+  "pr2_text": "For my bachelor thesis I researched the topic of mobile sales processes and how mobile apps can improve this process. Together with a colleague I then developed an Android app to test out the possibilities such an app can provide.",
+  "pr2_btn": "MORE INFO"
 }

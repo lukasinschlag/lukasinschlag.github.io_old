@@ -1,0 +1,135 @@
+
+.content {
+    position: fixed;
+    width: 100%;
+    min-width: 600px;
+    height: calc(100% - 60px);
+    top: 60px;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.content-area {
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin-left: 15%;
+    left: 0;
+    z-index: 20;
+}
+
+@media screen and (max-width: 900px) {
+    .content-area {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-device-width: 480px){
+    .content-area {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+.content-quote {
+    width: 100%;
+    height: 300px;
+}
+
+.content-text {
+    width: 100%;
+    line-height: 200%;
+    transition: all 0.5s ease;
+}
+
+.content-img-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    z-index: 20;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.content-img-text-big {
+    width: 100%;
+    display: block;
+    background: white;
+    z-index: 20;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+
+.content-img-text-big:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 100;
+}
+
+    .content-img-text-big img {
+        width: inherit;
+        display: block;
+    }
+
+    .content-itb-block {
+        display: block;
+        margin: 2.5%;
+    }
+.content-img-text:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 100;
+}
+
+    .content-img-text img {
+        width: 35%;
+        height: auto;
+        display: block;
+    }
+
+    .content-it-block {
+        width: 60%;
+        display: block;
+        margin: 2.5%;
+    }
+
+@media only screen and (max-device-width: 480px) {
+    .content-img-text {
+        width: 100%;
+        display: block;
+        background: white;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .content-img-text img {
+        width: 40%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.color-container {
+    display: inline-block;
+    margin: 12px;
+}
+
+.color-desc-container {
+    display: inline-block;
+}
+.color-desc {
+    display: inline-block;
+    margin: 12px;
+}
+
+.color-block {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-color: #1e88e5;
+}

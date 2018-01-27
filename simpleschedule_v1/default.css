@@ -1,0 +1,126 @@
+
+html {
+    margin: 0;
+    height: 100vh;
+    display: block;
+    font-family: Roboto, sans-serif;
+    color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    background: #eceff1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+
+footer {
+    height: 180px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*Text*/
+
+@font-face {
+    font-family: 'RobotoDraft';
+    font-style: normal;
+    font-weight: 400;
+    src: local('RobotoDraft'), local('RobotoDraft-Regular'), url(https://fonts.gstatic.com/s/robotodraft/v1/0xES5Sl_v6oyT7dAKuoni4gp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotodraft/v1/0xES5Sl_v6oyT7dAKuoni7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'RobotoDraft';
+    font-style: normal;
+    font-weight: 500;
+    src: local('RobotoDraft Medium'), local('RobotoDraft-Medium'), url(https://fonts.gstatic.com/s/robotodraft/v1/u0_CMoUf3y3-4Ss4ci-VwXJuJo8UJJfpGKt7pXjBv4s.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotodraft/v1/u0_CMoUf3y3-4Ss4ci-VwaTA90I55Xt7owhZwpPnMsc.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'RobotoDraft';
+    font-style: normal;
+    font-weight: 700;
+    src: local('RobotoDraft Bold'), local('RobotoDraft-Bold'), url(https://fonts.gstatic.com/s/robotodraft/v1/u0_CMoUf3y3-4Ss4ci-Vwf79_ZuUxCigM2DespTnFaw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotodraft/v1/u0_CMoUf3y3-4Ss4ci-VwRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'RobotoDraft';
+    font-style: italic;
+    font-weight: 400;
+    src: local('RobotoDraft Italic'), local('RobotoDraft-Italic'), url(https://fonts.gstatic.com/s/robotodraft/v1/er-TIW55l9KWsTS1x9bTfgeOulFbQKHxPa89BaxZzA0.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotodraft/v1/er-TIW55l9KWsTS1x9bTfoo3ZslTYfJv0R05CazkwN8.woff) format('woff');
+}
+
+.pt15M {
+    color: #212121;
+    font-family: "RobotoDraft","Roboto",sans-serif;
+    font-size: 0.9em;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .1px;
+    line-height: 2em;
+}
+
+.pt15M-light {
+    color: white;
+    font-family: "RobotoDraft","Roboto",sans-serif;
+    font-size: 0.9em;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .1px;
+    line-height: 2em;
+}
+
+.headingM {
+    color: #3F51B5;;
+    font-family: "RobotoDraft","Roboto",sans-serif;
+    font-size: 1.3em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .1px;
+    line-height: 2em;
+}
+
+.headingM-l {
+    color: #607d8b;;
+    font-family: "RobotoDraft","Roboto",sans-serif;
+    font-size: 2em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .1px;
+    line-height: 2em;
+}
+
+.pt8 {font-size: 0.5em;}
+
+.pt13 {font-size: 0.6em;}
+
+.pt14 {font-size: 0.8em;}
+
+.pt16 {font-size: 1em;}
+
+.pt18 {font-size: 1.2em;}
+
+.pt24 {font-size: 1.5em;}
+
+.pt32 {font-size: 2em;}
+
+.pt40 {font-size: 2.5em;}
+
+.pt48 {font-size: 3em;}
+
+.p-light {color: white}
+
+.p-it {
+    font-style: italic;
+}
+
+/*Shadows*/
+.z1 {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+
+.z2 {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+.z3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.z4 {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+
+.z5 {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}

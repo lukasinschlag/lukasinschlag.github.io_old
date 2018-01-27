@@ -3,8 +3,11 @@
 <head>
     <title>Lukas Inschlag</title>
 
+    <link rel="shortcut icon" type="image/png" href="res/favicon.png">
+
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="anims.css">
     <link rel="stylesheet" href="texts.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -13,14 +16,14 @@
 
 <div class="container">
     <div class="mdc-card mdc-card-w mdc-elevation--z6">
-        <div class="mdc-card__horizontal-block">
+        <div class="mdc-card__horizontal-block my-horizontal-block">
 
             <div class="logo-c">
                 <section class="mdc-card__media-item logo"></section>
 
                 <section id="language">
-                    <button class="mdc-button mdc-button--compact active">EN</button>
-                    <button class="mdc-button mdc-button--compact">DE</button>
+                    <button class="mdc-button mdc-button--compact active" id="langEN">EN</button>
+                    <button class="mdc-button mdc-button--compact" id="langDE">DE</button>
                 </section>
             </div>
 
@@ -28,6 +31,25 @@
 
                 <section id="dynamic-demo-toolbar">
                     <nav id="dynamic-tab-bar" class="mdc-tab-bar" role="tablist">
+
+                        <div class="mobile-switcher" style="display: none">
+                            <button class="mdc-button mdc-button--compact toggle"><span id="menu0m"></span></button>
+
+                            <div class="mdc-simple-menu" tabindex="-1" id="demo-menu">
+                                <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                                    <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                        <a role="tab" aria-controls="panel-1" href="#panel-1"><span id="menu1m"></span></a>
+                                    </li>
+                                    <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                        <a role="tab" aria-controls="panel-1" href="#panel-1"><span id="menu2m"></span></a>
+                                    </li>
+                                    <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                        <a role="tab" aria-controls="panel-1" href="#panel-1"><span id="menu3m"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <a role="tab" aria-controls="panel-1"
                            class="mdc-tab mdc-tab--active" href="#panel-1"><span id="menu1"></span></a>
                         <a role="tab" aria-controls="panel-2"
@@ -40,14 +62,21 @@
 
                 <section>
                     <div class="panels">
+                        <!--
+                            About me
+                        -->
                         <div class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">
+                            <h1 class="mdc-card__title mdc-card__title--xlarge"></h1>
                             <h1 class="mdc-card__title mdc-card__title--xlarge white" id="p1_title"></h1>
                             <div class="separator--large"></div>
-                            <h2 class="mdc-card__title mdc-card__title--med white" id="p1_text"></h2>
+                            <h2 class="mdc-card__title mdc-card__text--med white" id="p1_text"></h2>
                         </div>
-                        <div class="panel mdc-card__horizontal-block" id="panel-2" role="tabpanel" aria-hidden="true">
+                        <!--
+                            Curriculum vitae
+                        -->
+                        <div class="panel mdc-card__horizontal-block panel-h" id="panel-2" role="tabpanel" aria-hidden="true">
                             <div class="box-horizontal-inner">
-                                <h2 class="mdc-card__title mdc-card__title--med white" id="ex_title"></h2>
+                                <h2 class="mdc-card__title text-slab-b" id="ex_title"></h2>
                                 <p class="mdc-list-item__text" id="ex_line1"></p>
                                 <p class="mdc-list-item__text" id="ex_line2"></p>
                                 <p class="mdc-list-item__text" id="ex_line3"></p>
@@ -55,15 +84,41 @@
                                 <p class="mdc-list-item__text" id="ex_line5"></p>
                             </div>
                             <div class="box-horizontal-inner">
-                                <h2 class="mdc-card__title mdc-card__title--med white" id="ed_title"></h2>
+                                <h2 class="mdc-card__title text-slab-b" id="ed_title"></h2>
                                 <p class="mdc-list-item__text" id="ed_line1"></p>
                                 <p class="mdc-list-item__text" id="ed_line2"></p>
                                 <p class="mdc-list-item__text" id="ed_line3"></p>
                                 <p class="mdc-list-item__text" id="ed_line4"></p>
                             </div>
                         </div>
-                        <div class="panel" id="panel-3" role="tabpanel" aria-hidden="true">
+                        <div class="panel mdc-card__horizontal-block panel-h" id="panel-3" role="tabpanel" aria-hidden="true">
+                            <div class="box-horizontal-inner">
+                                <div class="mdc-card demo-card">
+                                    <section class="mdc-card__media">
+                                        <h1 class="mdc-card__title mdc-card__title--large white" id="pr1_title"></h1>
+                                    </section>
+                                    <section class="mdc-card__subtitle">
+                                        <p class="mdc-card__supporting-text" id="pr1_text"></p>
+                                    </section>
+                                    <section class="mdc-card__actions">
+                                        <a class="mdc-button mdc-button--compact mdc-card__action" href="simpleschedule_v1/simpsched.html"><div id="pr1_btn"></div></a>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="box-horizontal-inner">
+                                <div class="mdc-card demo-card">
+                                    <section class="mdc-card__media img2">
+                                        <h1 class="mdc-card__title mdc-card__title--large white" id="pr2_title"></h1>
+                                    </section>
+                                    <section class="mdc-card__subtitle">
+                                        <p class="mdc-card__supporting-text" id="pr2_text"></p>
+                                    </section>
+                                    <section class="mdc-card__actions">
+                                        <a class="mdc-button mdc-button--compact mdc-card__action" href="res/bachelor_thesis.pdf"><div id="pr2_btn"></div></a>
+                                    </section>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                     <div class="dots">
@@ -79,6 +134,8 @@
 
             </section>
         </div>
+
+        <div class="ripple"></div>
     </div>
 </div>
 

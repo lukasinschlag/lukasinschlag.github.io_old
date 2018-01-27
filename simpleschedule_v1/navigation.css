@@ -1,0 +1,102 @@
+
+.bar {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 100;
+}
+
+.bar-p {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #607d8b;
+    color: white;
+    z-index: 100;
+}
+
+.bar-ss {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #3F51B5;
+    color: white;
+    z-index: 100;
+}
+
+.bar-ss a, .bar-p a{
+    color: white;
+    text-decoration: none;
+}
+
+.bar-icon-container {
+    float: left;
+    display: block;
+    height: inherit;
+}
+
+.bar-icon {
+    width: 48px;
+    height: 48px;
+    background-size: 48px;
+    background-image: url(../images/logo_normal.png);
+    margin: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bar-icon-back {
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    display: block;
+    padding: 18px;
+    top: 0;
+    left: 0;
+}
+
+.bar-icon-back:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.bar-icon-text {
+    height: 48px;
+    position: fixed;
+    top: 0;
+    left: 80px;
+    line-height: 48px;
+    font-weight: 500;
+}
+
+.bar-ss .bar-icon-text, .bar-p .bar-icon-text {
+    height: 28px;
+    line-height: 28px;
+}
+
+.bar-navigation {
+    float: right;
+    display: block;
+    height: inherit;
+}
+
+.tab {
+    color: rgba(0,0,0,0.7);
+    line-height: 80px;
+    margin: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tab:hover {
+    color: #1e88e5;
+}
+

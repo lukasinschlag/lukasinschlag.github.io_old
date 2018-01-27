@@ -2,18 +2,18 @@ body {
     width: 100%;
     min-height: 100vh;
     margin: 0;
+    --mdc-theme-primary: #0d47a1;
+    --mdc-theme-secondary: #FFCA28;
 }
 
 .container {
     height: inherit;
     min-height: 100vh;
     display: block;
-    background-repeat: no-repeat;
     background-size: auto;
     /*background: -webkit-linear-gradient(-45deg, rgba(66, 66, 66, 1) 0%,rgba(48, 48, 48, 1) 100%);
     background: linear-gradient(135deg, rgba(66, 66, 66, 1) 0%,rgba(48, 48, 48, 1) 100%); */
-    background: linear-gradient(135deg, rgba(255,255,255, 1) 0%,rgba(242, 242, 242, 1) 100%);
-    overflow: auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%) no-repeat;
 }
 
 .logo-c {
@@ -53,15 +53,23 @@ body {
     opacity: 1;
 }
 
+.mdc-card-w {
+    position: relative;
+    background: white url("res/bg2.png");
+    display: block;
+    height: inherit;
+    min-height: 100vh;
+}
+
+.my-horizontal-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .mdc-card__horizontal-block {
     height: 100%;
     padding-right: 0;
-}
-
-.mdc-card-w {
-    background-image: url("res/bg2.png");
-    display: block;
-    height: 800px;
 }
 
 .card-hb1 {
@@ -77,8 +85,8 @@ body {
     background-color: rgba(21, 101, 192, 0.85);
 }
 
-.box-horizontal-inner {
-    max-width: 45%;
+#demo-menu {
+    z-index: 20;
 }
 
 #dynamic-tab-bar {
@@ -107,7 +115,9 @@ body {
 }
 
 .panels {
-    margin-top: 48px;
+    margin-top: 8px;
+    overflow: auto;
+    max-height: 80vh;
 }
 
 .panel {
@@ -118,12 +128,17 @@ body {
 .panel.active {
     visibility: visible;
     display: block;
+    overflow: hidden;
 }
 
 .mdc-card__horizontal-block.active {
     visibility: visible;
-    display: flex;
+    display: block;
     padding: 24px;
+}
+
+.box-horizontal-inner .mdc-list-item__text {
+    width: 100%;
 }
 
 .mdc-dialog__footer {
@@ -148,6 +163,32 @@ body {
     background-color: rgba(255, 167, 36, 0.85);
 }
 
+/*
+ * PROJECTS
+ */
+.demo-card {
+    background-color: white;
+    min-width: 320px;
+}
+
+.demo-card .mdc-card__media {
+    background-image: url("res/images/subjects_dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 10.938rem;
+}
+
+.demo-card .img2 {
+    background-image: url("res/images/eco_dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.mdc-card__supporting-text:last-child {
+    padding-bottom: 0;
+}
+
 @media screen and (min-width: 1600px) {
     .container {
         padding-top: 15%;
@@ -156,11 +197,29 @@ body {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .container {
         padding-top: 5%;
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    .panels {
+        overflow: hidden;
+    }
+
+    .panel-h.active {
+        display: flex;
+        max-height: 90%;
+    }
+
+    .box-horizontal-inner {
+        max-width: 45%;
+    }
+
+    .mdc-card-w {
+        height: 800px;
+        min-height: 800px;
     }
 }
 
