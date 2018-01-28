@@ -9,12 +9,8 @@ dynamicTabBar.tabs.forEach(function(tab) {
     tab.preventDefaultOnClick = true;
 });
 
-var menuEl = document.querySelector('#demo-menu');
-var menu = new mdc.menu.MDCSimpleMenu(menuEl);
-var toggle = document.querySelector('.toggle');
-toggle.addEventListener('click', function() {
-    menu.open = !menu.open;
-});
+let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
+document.querySelector('.mobile-menu').addEventListener('click', () => drawer.open = true);
 
 function updateDot(index) {
     var activeDot = dots.querySelector('.dot.active');

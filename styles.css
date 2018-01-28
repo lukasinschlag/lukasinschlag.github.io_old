@@ -114,6 +114,14 @@ body {
     opacity: 0.04;
 }
 
+.mobile-switcher {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .panels {
     margin-top: 8px;
     overflow: auto;
@@ -220,6 +228,16 @@ body {
     .mdc-card-w {
         height: 800px;
         min-height: 800px;
+    }
+}
+
+@media handheld {
+    .mobile-switcher {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
     }
 }
 
