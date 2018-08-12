@@ -1,19 +1,19 @@
 {
   "menu1": "ÜBER <b>MICH</b>",
   "menu2": "CURRICULUM VITAE",
-  "menu3": "PROJECTS",
-  "p1_title": "HELLO THERE",
-  "p1_text": "My name is Lukas Inschlag, currently living in lower Austria.<br> I studied business infromatics at the University of Technology in Vienna and currently work as Business IT Manager. Aside from that I occasionally develop apps for the Android plattform.",
+  "menu3": "PROJEKTE",
+  "p1_title": "Hallo!",
+  "p1_text": "Ich heiße Lukas Inschlag und lebe derzeit in Niederösterreich, Bezirk Baden.<br> Ich studiere gerade das Masterstudium Business informatics an der Technischen Universität Wien und arbeite als Business IT Manager. Nebenbei entwickle ich Android apps und habe gerade das Udacity Android Developer Zertifikat erlangt.",
 
-  "ex_title": "EXPERIENCE",
-  "ex_line1": "<b>06/2012</b> Social project: Caritas Vienna (Haus Amadou)",
-  "ex_line2": "<b>07-08/2014</b> IT internship at Hirtenberger AG",
+  "ex_title": "ERFAHRUNGEN",
+  "ex_line1": "<b>06/2012</b> Sozial Projekt: Caritas Wien (Haus Amadou)",
+  "ex_line2": "<b>07-08/2014</b> IT Praktikum bei Hirtenberger AG",
   "ex_line3": "<b>07-08/2015</b> Android app: Simple Schedule",
-  "ex_line4": "<b>01/2016-07/2017</b> IT Support at Hirtenberger AG (1d per week)",
-  "ex_line5": "<b>08/2017-Today</b> Business IT Manager at Hirtenberger AG (4d per week)",
-  "ed_title": "EDUCATION",
-  "ed_line1": "<b>2005-2009</b> Junior high school: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, Lower Austria",
-  "ed_line2": "<b>2009-2013</b> Senior high school: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, Lower Austria",
-  "ed_line3": "<b>2013-2017</b> Bachelor program Business Informatics, University of Technology, Vienna",
-  "ed_line4": "<b>2017-Today</b> Master program Business Informatics, University of Technology, Vienna"
+  "ex_line4": "<b>01/2016-07/2017</b> IT Support bei Hirtenberger AG",
+  "ex_line5": "<b>08/2017-Today</b> Business IT Manager bei Hirtenberger Holding GmbH",
+  "ed_title": "AUSBILDUNG",
+  "ed_line1": "<b>2005-2009</b> Unterstufe: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, NÖ",
+  "ed_line2": "<b>2009-2013</b> Oberstufe: 'Don Bosco Real-, Aufbau- und Aufbaurealgymnasiums' in Unterwaltersdorf, NÖ",
+  "ed_line3": "<b>2013-2017</b> Bachelor Wirtschaftsinformatik, Technischen Universität Wien",
+  "ed_line4": "<b>2017-Today</b> Master Business Informatics, Technischen Universität Wien"
 }
